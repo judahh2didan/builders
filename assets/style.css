@@ -261,11 +261,18 @@ nav a.active {
 }
 
 /* Highlight Banner */
+.highlight{
+  height: 700px;
+  background: #fff;
+}
+
 .highlight-banner {
   background-color: #ff5c35;
-  padding: 50px 5%;
+  padding: 30px 5%;
   color: #fff;
-  text-align: center;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .highlight-banner h3 {
@@ -273,12 +280,34 @@ nav a.active {
   margin-bottom: 20px;
 }
 
+.highlight-banner h4{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
 .btn {
+  text-align: right;
   padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   margin: 0 10px;
+  height: 40px;
+  
+}
+
+.highlight-text img{
+  width: 500px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 0 10px;
+}
+
+.to-offer{
+  display: flex;
+  gap: 130px; 
+  flex-wrap: wrap;
 }
 
 .btn.primary {
@@ -287,14 +316,59 @@ nav a.active {
 }
 
 .btn.secondary {
-  border: 2px solid #fff;
+  border:2px solid #fff;
   color: #fff;
+  padding: 5px 20px;
+}
+
+/* Image hover effects */
+.img-container {
+  width: 500px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+        
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+.overlay-img {
+  position: relative;
+}
+
+.overlay-text{
+  margin: 10px;
+}
+
+.overlay-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+               
+.overlay-img:hover .overlay {
+  opacity: 1;
 }
 
 /* Solutions Section */
 .solutions {
+  top: 70px;
   padding: 60px 5%;
-  background-color: #fff;
+  background-color: #b5b4b4;
   text-align: center;
 }
 
@@ -345,7 +419,7 @@ nav a.active {
 
 /* Service Offerings Section */
 .service-offerings {
-  background-color: #f3f3f3;
+  background-color: #b4b4b4;
   padding: 60px 5%;
 }
 
