@@ -232,6 +232,34 @@ nav a.active {
   border-radius: 8px;
 }
 
+.animated-dropdown-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px; /* Add space between buttons */
+    padding: 12px;
+    background-color: #fdc148;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.5s ease;
+}
+
+.animated-dropdown-btn:hover {
+    background-color: #eba10d;
+}
+
+.animated-dropdown-content {
+    display: none;
+    padding: 12px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
 /* Highlight Banner */
 .highlight-banner {
   background-color: #ff5c35;
