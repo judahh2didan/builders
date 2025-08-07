@@ -1,4 +1,15 @@
 /* Basic Reset and Styles */
+root {
+  --primary-color: #ff5c35;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --background-color: #fff;
+  --label-color: #666;
+  --animated-bg-color: #fdc148;
+  --hover-bg-color: #eba10d;
+  --solu-background-color: #b5b4b4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +18,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fff;
+  background: var(--background-color);
   color: #111;
 }
 
@@ -22,7 +33,7 @@ header {
 .logo {
   font-weight: bold;
   font-size: 1.5em;
-  color: #333;
+  color: var(--text-color);
 }
 
 nav ul {
@@ -33,7 +44,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
 }
 
@@ -42,7 +53,7 @@ nav a.active {
 }
 
 .contact-btn {
-  background: #ff5c35;
+  background: var(--primary-color);
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
@@ -101,7 +112,7 @@ nav a.active {
 .counter .label {
   display: block;
   font-size: 0.9em;
-  color: #666;
+  color: var(--label-color);
 }
 
 .hero-images {
@@ -123,7 +134,7 @@ nav a.active {
 /* Stats Section */
 .stats {
   padding: 60px 5%;
-  background-color: #f9f9f9;
+  background-color: var(--secondary-color);
   text-align: center;
 }
 
@@ -135,7 +146,7 @@ nav a.active {
 }
 
 .stat h2 {
-  color: #ff5c35;
+  color: var(--primary-color);
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -166,13 +177,13 @@ nav a.active {
 
 .stats-buttons button::before {
   content: '✔';
-  color: #333;
+  color: var(--text-color);
 }
 
 /* Vision Forge Section */
 .vision-forge {
   padding: 60px 5%;
-  background: #fff;
+  background: var(--background-color);
 }
 
 .vision-content {
@@ -237,7 +248,7 @@ nav a.active {
     width: 100%;
     margin-bottom: 16px; /* Add space between buttons */
     padding: 12px;
-    background-color: #fdc148;
+    background-color: var(--animated-bg-color);
     border: none;
     text-align: left;
     cursor: pointer;
@@ -247,7 +258,7 @@ nav a.active {
 }
 
 .animated-dropdown-btn:hover {
-    background-color: #eba10d;
+    background-color: var(--hover-bg-color);
 }
 
 .animated-dropdown-content {
@@ -255,7 +266,7 @@ nav a.active {
     padding: 12px;
     margin-top: -12px;
     margin-bottom: 12px;
-    background-color: #fafafa;
+    background-color: var(--secondary-color);
     border: 1px solid #ddd;
     border-radius: 4px;
 }
@@ -263,13 +274,13 @@ nav a.active {
 /* Highlight Banner */
 .highlight{
   height: 700px;
-  background: #fff;
+  background: var(--background-color);
 }
 
 .highlight-banner {
-  background-color: #ff5c35;
+  background-color: var(--primary-color);
   padding: 30px 5%;
-  color: #fff;
+  color: var(--background-color);
   height: 500px;
   display: flex;
   justify-content: space-between;
@@ -311,13 +322,13 @@ nav a.active {
 }
 
 .btn.primary {
-  background: #fff;
-  color: #ff5c35;
+  background: var(--background-color);
+  color: var(--primary-color);
 }
 
 .btn.secondary {
-  border:2px solid #fff;
-  color: #fff;
+  border:2px solid var(--background-color);
+  color: var(--background-color);
   padding: 5px 20px;
 }
 
@@ -368,7 +379,7 @@ nav a.active {
 .solutions {
   top: 70px;
   padding: 60px 5%;
-  background-color: #b5b4b4;
+  background-color: var(--solu-background-color);
   text-align: center;
 }
 
@@ -397,7 +408,7 @@ nav a.active {
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  background: #fff;
+  background: var(--background-color);
   transition: transform 0.3s;
 }
 
@@ -419,7 +430,7 @@ nav a.active {
 
 /* Service Offerings Section */
 .service-offerings {
-  background-color: #b4b4b4;
+  background-color: var(--solu-background-color);
   padding: 60px 5%;
 }
 
@@ -452,7 +463,7 @@ nav a.active {
 /* Testimonials Section */
 .testimonials {
   padding: 60px 5%;
-  background: #f9f9f9;
+  background: var(--secondary-color);
   text-align: center;
 }
 
@@ -469,7 +480,7 @@ nav a.active {
 }
 
 .testimonial {
-  background: #fff;
+  background: var(--background-color);
   border-radius: 10px;
   padding: 20px;
   width: 280px;
@@ -479,7 +490,7 @@ nav a.active {
 /* Latest News Section */
 .latest-news {
   padding: 60px 5%;
-  background: #fff;
+  background: var(--background-color);
   text-align: center;
 }
 
